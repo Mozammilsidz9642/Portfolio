@@ -377,9 +377,28 @@ footer{
 
 @media (max-width:768px){
   nav,footer,.home-wrapper,.section{width:min(100% - 20px,1180px)}
-  nav{padding:16px 18px;flex-direction:column;gap:12px}
+  nav{
+    padding:14px 16px;
+    flex-direction:column;
+    gap:10px;
+    align-items:flex-start;
+  }
+  nav h1{
+    font-size:1rem;
+  }
+  nav ul{
+    width:100%;
+    gap:10px 14px;
+    justify-content:center;
+  }
+  nav ul li a{
+    font-size:.78rem;
+  }
   .hero-panel,.section-panel{padding:24px 18px}
   .hero-copy h2,.sub-hero h2{font-size:2.35rem}
+  .typing-line{font-size:1.05rem}
+  .hero-text{font-size:.94rem;line-height:1.7}
+  .section-panel h2{font-size:1.9rem}
   .hero-photo-card{width:100%}
   .hero-photo{width:76%}
   .hero-metrics,.projects{grid-template-columns:1fr}
@@ -388,4 +407,55 @@ footer{
   body::before,body::after{opacity:.24}
   html::before{opacity:.08}
   html::after{opacity:.22}
+}
+
+@media (max-width:480px){
+  nav{
+    border-radius:14px;
+  }
+  nav ul{
+    gap:8px 10px;
+  }
+  nav ul li a{
+    font-size:.72rem;
+  }
+  .hero-panel,.section-panel{padding:20px 14px}
+  .hero-copy h2,.sub-hero h2{
+    font-size:1.95rem;
+    line-height:1.15;
+  }
+  .eyebrow{
+    font-size:.7rem;
+    letter-spacing:1.4px;
+  }
+  .typing-line{
+    min-height:28px;
+    font-size:.98rem;
+  }
+  .hero-actions{
+    justify-content:center;
+  }
+  .btn{
+    padding:10px 18px;
+    font-size:.88rem;
+  }
+  .social-link{
+    width:40px;
+    height:40px;
+  }
+  .social-link svg{
+    width:18px;
+    height:18px;
+  }
+  .hero-photo-card{
+    max-width:280px;
+    margin:0 auto;
+  }
+  .about-avatar-ring{
+    width:132px;
+    height:132px;
+  }
+  .skill-head{
+    font-size:.84rem;
+  }
 }
